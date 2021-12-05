@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="primary">#1C1C1C</color>
+  <color name="primary_alt">#121212</color>
+  <color name="secondary">#F57C00</color>
+  <color name="secondary_alt">#E65100</color>
+  <color name="white">#FFFFFFFF</color>
+  <color name="black_overlay">#66000000</color>
+</resources>

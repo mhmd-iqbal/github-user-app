@@ -1,0 +1,24 @@
+<resources>
+  <string name="app_name">GitHub User App</string>
+  <string name="search_hint">Search</string>
+  <string name="tab_text_1">Followers</string>
+  <string name="tab_text_2">Following</string>
+  <string name="welcome_text">What are you looking for?</string>
+  <string name="not_found_text">Oops! Data not found :(</string>
+  <string name="loading_text">Please wait..</string>
+  <string name="no_company">No company</string>
+  <string name="no_name">No name</string>
+  <string name="no_location">No location</string>
+  <string name="no_data_found">No Data Found</string>
+  <string name="fav_menu_desc">Display Favorite User</string>
+  <string name="back_button">Back button</string>
+  <string name="avatar_user">Avatar User</string>
+  <string name="favorite_list">Favorite User List</string>
+  <string name="setting">Setting</string>
+  <string name="turn_dark_mode_on">Dark Mode on</string>
+  <string name="turn_dark_mode_off">Dark Mode off</string>
+  <string name="instagram">Instagram</string>
+  <string name="whatsapp">WhatsApp</string>
+  <string name="tv_social_media">Social Media</string>
+  <string name="github">GitHub</string>
+</resources>

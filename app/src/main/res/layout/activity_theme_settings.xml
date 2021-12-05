@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.setting.ThemeSettingsActivity">
+
+  <com.google.android.material.switchmaterial.SwitchMaterial
+    android:id="@+id/theme_switch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:text="@string/turn_dark_mode_off"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteY="118dp" />
+
+  <View
+    android:id="@+id/divider"
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    android:layout_marginTop="16dp"
+    android:background="?android:attr/listDivider"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/theme_switch" />
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/cv_github"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginTop="24dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.05"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="vertical"
+      tools:ignore="UseCompoundDrawables">
+
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/github"
+        android:src="@drawable/github" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/github"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/cv_instagram"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginStart="32dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    app:layout_constraintBottom_toBottomOf="@+id/cv_github"
+    app:layout_constraintStart_toEndOf="@+id/cv_github"
+    app:layout_constraintTop_toTopOf="@+id/cv_github">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="vertical"
+      tools:ignore="UseCompoundDrawables">
+
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/instagram"
+        android:src="@drawable/instagram" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/instagram"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/cv_whatsapp"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_marginStart="32dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    app:layout_constraintBottom_toBottomOf="@+id/cv_instagram"
+    app:layout_constraintStart_toEndOf="@+id/cv_instagram"
+    app:layout_constraintTop_toTopOf="@+id/cv_instagram">
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:gravity="center"
+      android:orientation="vertical"
+      tools:ignore="UseCompoundDrawables">
+
+      <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/whatsapp"
+        android:src="@drawable/whatsapp" />
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/whatsapp"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="@string/tv_social_media"
+    android:textSize="22sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="?attr/colorPrimary"
+  android:theme="@style/ThemeOverlay.GitHubUserApp.FullscreenContainer"
+  tools:context=".ui.splashscreen.SplashScreenActivity">
+
+  <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+  <ImageView
+    android:id="@+id/fullscreen_logo"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:keepScreenOn="true"
+    android:src="@drawable/ic_logo_white"
+    app:layout_constraintBottom_toTopOf="@id/fullscreen_text"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.497"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.97" />
+
+  <TextView
+    android:id="@+id/fullscreen_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="288dp"
+    android:gravity="center"
+    android:text="@string/app_name"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="@+id/fullscreen_logo"
+    app:layout_constraintHorizontal_bias="0.514"
+    app:layout_constraintStart_toStartOf="@+id/fullscreen_logo" />
+
+  <ProgressBar
+    android:id="@+id/progressBar2"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="72dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:text="@string/loading_text"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="@id/progressBar2"
+    app:layout_constraintStart_toStartOf="@id/progressBar2"
+    app:layout_constraintTop_toBottomOf="@id/progressBar2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
